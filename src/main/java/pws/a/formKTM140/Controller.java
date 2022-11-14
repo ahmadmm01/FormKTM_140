@@ -18,7 +18,8 @@ import org.springframework.web.multipart.MultipartFile;
  *
  * @author MADD
  */
-public class Controller 
+@org.springframework.stereotype.Controller
+public class Controller
 {
     @RequestMapping("/nexthalaman")
     public String getData(
