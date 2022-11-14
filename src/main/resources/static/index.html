@@ -5,11 +5,158 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>KTM Input</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body
+            {
+                width: 450px;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(0, -50%);
+                margin-left: -225px;
+                border: 1px solid black;
+                border-radius: 10px;
+                
+            }
+
+            .left-div
+            {
+                margin-left: 50px;
+                width: 100px;
+                display: inline-block;
+            }
+
+            .double-colon
+            {
+                display: inline-block;
+            }
+
+            .right-div
+            {
+                margin-left: 30px;
+                display: inline-block;
+            }
+        </style>
     </head>
+    
     <body>
-        <div>TODO write content</div>
+    <center>
+        <h1>KTM Input</h1>
+    </center>
+        <hr>
+        <form action="/nexthalaman" method="post" enctype="multipart/form-data">
+            <div class="box">
+                <div class="left-div">
+                    Nama
+                </div>
+                <div class="double-colon">
+                    <h3>:</h3>
+                </div>
+                <div class="right-div">
+                    <input type="text" name="nama" required>
+                </div>
+            </div>
+            <div class="box">
+                <div class="left-div">
+                    NIM
+                </div>
+                <div class="double-colon">
+                    <h3>:</h3>
+                </div>
+                <div class="right-div">
+                    <input type="text" name="nim" required>
+                </div>
+            </div>
+            <div class="box">
+                <div class="left-div">
+                    Tanggal Lahir
+                </div>
+                <div class="double-colon">
+                    <h3>:</h3>
+                </div>
+                <div class="right-div">
+                    <input type="date" name="tanggallahir" required style="width: 173px">
+                </div>
+            </div>
+            <div class="box">
+                <div class="left-div">
+                    <label for="program">Program</label>
+                </div>
+                <div class="double-colon">
+                    <h3>:</h3>
+                </div>
+                <div class="right-div">
+                    <select name="program" id="program" style="width: 178px" required>
+                        <option value="">Choose...</option>
+                        <option value="D1">D1</option>
+                        <option value="D2">D2</option>
+                        <option value="D3">D3</option>
+                        <option value="D4">D4</option>
+                        <option value="S1">S1</option>
+                        <option value="S2">S2</option>
+                        <option value="S3">S3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="box">
+                <div class="left-div">
+                    <label for="jurusan">Jurusan</label>
+                </div>
+                <div class="double-colon">
+                    <h3>:</h3>
+                </div>
+                <div class="right-div">
+                    <select name="jurusan" id="jurusan" style="width: 178px" required>
+                        <option value="">Choose...</option>
+                        <option value="Teknologi Informasi">Teknologi Informasi</option>
+                        <option value="Teknik Sipil">Teknik Sipil</option>
+                        <option value="Teknik Elektro">Teknik Elektro</option>
+                        <option value="Teknik Mesin">Teknik Mesin</option>
+                    </select>
+                </div>
+            </div>
+            <div class="box">
+                <div class="left-div">
+                    Angkatan
+                </div>
+                <div class="double-colon">
+                    <h3>:</h3>
+                </div>
+                <div class="right-div">
+                    <input type="text" name="angkatan" required>
+                </div>
+            </div>
+            <div class="box">
+                <div class="left-div">
+                    E-mail
+                </div>
+                <div class="double-colon">
+                    <h3>:</h3>
+                </div>
+                <div class="right-div">
+                    <input type="text" name="email" required>
+                </div>
+            </div>
+            <div class="box">
+                <div class="left-div">
+                    Foto
+                </div>
+                <div class="double-colon">
+                    <h3>:</h3>
+                </div>
+                <div class="right-div">
+                    <input type="file" name="foto" accept="image/png, image/jpeg" required>
+                </div>
+            </div>
+            <div class="box" style="padding: 10px">
+                <center>
+                    <input type="submit" value="KIRIM" name="submit"/>
+                </center>
+            </div>
+        </form>
     </body>
 </html>
